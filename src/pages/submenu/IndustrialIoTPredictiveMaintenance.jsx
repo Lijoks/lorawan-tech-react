@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const IndustrialIoTPredictiveMaintenance = () => {
@@ -47,21 +48,54 @@ const IndustrialIoTPredictiveMaintenance = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Industrial IoT & Predictive Maintenance</h1>
-            <p className="text-xl max-w-3xl mx-auto mb-8">
-              Unlock efficiency with real-time equipment monitoring and failure prevention for maximum uptime
+      {/* 1. Hero Section with Image Background */}
+      <section 
+        className="relative min-h-[550px] flex items-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/Industrial-IoT-Predictive-Maintenance.webp')" }}
+      >
+        {/* Dark Overlay for Text Legibility */}
+        <div className="absolute inset-0 bg-slate-900/60"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+          <div className="max-w-3xl text-left">
+            {/* Heading updated to match screenshot */}
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Unlock Efficiency with<br /> Industrial IoT & Predictive<br /> Maintenance Solutions
+            </h1>
+            
+            {/* Sub-text updated to match screenshot */}
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+              LoRaWANTech’s IIoT and Predictive Maintenance platforms provide 
+              real-time equipment monitoring and failure prevention—maximizing 
+              uptime and operational agility.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-lg">
-                In modern industrial environments, unplanned downtime and equipment failures severely impact 
-                productivity. Industrial IoT combined with predictive maintenance enables businesses to proactively 
-                monitor equipment conditions, anticipate failures, and optimize maintenance schedules.
-              </p>
-            </div>
+            
+            {/* Brand-consistent Contact Us Button */}
+            <a 
+              href="/contact" 
+              className="inline-flex items-center bg-[#0B1C33] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-black transition-all group"
+            >
+              Contact Us
+              <div className="ml-3 border border-white/40 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+                <ArrowRight className="w-4 h-4" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Secondary Description Section */}
+      <section className="bg-white py-16 md:py-20 border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-5xl text-gray-700 text-lg leading-relaxed">
+            <p>
+              
+
+In modern industrial environments, unplanned downtime, equipment failures, and inefficient asset utilization can severely impact productivity and profitability. Industrial IoT (IIoT) combined with predictive maintenance strategies enables businesses to proactively monitor equipment conditions, anticipate failures, and optimize maintenance schedules.
+
+LoRaWANTech supports manufacturing, energy, logistics, and heavy industries with turnkey IIoT and predictive maintenance solutions that deliver real-time visibility into machinery health. From vibration and temperature sensors to cloud-based analytics platforms, we integrate sensor networks with AI-driven insights to transform raw data into actionable intelligence—reducing OPEX and increasing asset longevity.
+
+            </p>
           </div>
         </div>
       </section>
@@ -70,10 +104,9 @@ const IndustrialIoTPredictiveMaintenance = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Predictive Maintenance Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Components of IIoT & Predictive Maintenance Systems</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              From vibration and temperature sensors to cloud-based analytics platforms, we integrate sensor 
-              networks with AI-driven insights to transform raw data into actionable intelligence.
+              With cutting-edge technologies sourced from trusted partners like GAO Tek Inc. and GAO RFID Inc., LoRaWANTech delivers end-to-end solutions customized for industrial operations.
             </p>
           </div>
 
@@ -273,6 +306,67 @@ const IndustrialIoTPredictiveMaintenance = () => {
           </div>
         </div>
       </section>
+      {/* Case Studies & CTA Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    {/* Case Studies Header */}
+    <h2 className="text-3xl font-bold text-[#1a639b] mb-10">Case Studies</h2>
+
+    {/* Case Study Tabs */}
+    <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 1 – USA: Smart Agriculture Deployment (Iowa)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 2 – USA: Utility Monitoring System (Colorado)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 3 – Canada: Cold Chain Monitoring (British Columbia)
+      </button>
+    </div>
+
+    {/* Case Study Description */}
+    <p className="text-gray-700 text-lg leading-relaxed mb-20">
+      A large-scale agribusiness in Iowa implemented LoRaWANTech’s LoRaWAN end devices to monitor soil 
+      moisture and crop health over 1,200 acres. The system, powered by solar-assisted nodes and 
+      GAO Tek Inc. sensors, resulted in a 30% water savings and significantly improved crop 
+      yield forecasting.
+    </p>
+
+    {/* Bottom CTA Card */}
+    <div 
+      className="relative rounded-[2.5rem] overflow-hidden bg-cover bg-center min-h-[380px] flex items-center"
+      style={{ backgroundImage: "url('/images/lorawan-cta.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 p-8 md:p-16 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          Looking to increase uptime, reduce <br /> maintenance costs, and optimize your industrial operations?
+        </h2>
+        
+        <p className="text-lg text-gray-200 mb-10 max-w-2xl">
+          Contact LoRaWANTech to speak with our technical specialists, request quotes, 
+          or explore customized deployment solutions.
+        </p>
+
+        {/* Contact Us Button - White Style */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-white text-gray-900 px-7 py-3 rounded-md font-bold text-base hover:bg-gray-100 transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-gray-900 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };

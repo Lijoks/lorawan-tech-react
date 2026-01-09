@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const SmartUtilityMetering = () => {
@@ -43,21 +44,45 @@ const SmartUtilityMetering = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Smart Utility Metering Solutions</h1>
-            <p className="text-xl max-w-3xl mx-auto mb-8">
-              Transform utility management with real-time water, gas, and electricity monitoring
+      <section 
+        className="relative min-h-[600px] flex items-center bg-cover bg-center text-white py-20"
+        style={{ backgroundImage: "url('/images/Smart-Utility-Metering.webp')" }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Transform Utility Management with Real-Time Smart Metering Solutions
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 mb-8">
+              LoRaWANTech's Smart Utility Metering systems deliver accurate, automated water, gas, and electricity monitoring—streamlining billing and infrastructure oversight.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-lg">
-                As utility providers face rising infrastructure costs and growing customer expectations, 
-                Smart Utility Metering has emerged as a key enabler of next-generation service delivery. 
-                These systems enable real-time monitoring, eliminating manual reads and improving billing accuracy.
-              </p>
-            </div>
+            
+            {/* Contact Us Button */}
+            <a 
+              href="/contact" 
+              className="inline-flex items-center bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-lg transition-colors group"
+            >
+              Contact Us
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
+        </div>
+      </section>
+
+      {/* Description Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            
+
+As utility providers face rising infrastructure costs, regulatory pressures, and growing customer expectations, Smart Utility Metering has emerged as a key enabler of next-generation service delivery. These systems enable real-time monitoring of electricity, gas, and water usage, eliminating manual reads, improving billing accuracy, and reducing energy losses through early leak or fault detection.
+
+LoRaWANTech partners with municipalities, energy providers, and private utilities across North America to deploy scalable, interoperable smart metering solutions. Built on reliable long-range connectivity and open data platforms, our systems empower utility operators with greater visibility, automation, and control over critical infrastructure—whether in dense urban areas or remote rural sites.
+
+          </p>
         </div>
       </section>
 
@@ -65,10 +90,9 @@ const SmartUtilityMetering = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Advanced Metering Infrastructure</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Components of Smart Metering Systems</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              Built on reliable long-range connectivity and open data platforms, our systems empower utility 
-              operators with greater visibility, automation, and control over critical infrastructure.
+              Leveraging proven technologies from GAO Tek Inc. and GAO RFID Inc., LoRaWANTech delivers advanced metering infrastructure (AMI) tailored to a range of deployment environments.
             </p>
           </div>
 
@@ -230,6 +254,67 @@ const SmartUtilityMetering = () => {
           </div>
         </div>
       </section>
+      {/* Case Studies & CTA Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    {/* Case Studies Header */}
+    <h2 className="text-3xl font-bold text-[#1a639b] mb-10">Case Studies</h2>
+
+    {/* Case Study Tabs */}
+    <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 1 – USA: Smart Agriculture Deployment (Iowa)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 2 – USA: Utility Monitoring System (Colorado)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 3 – Canada: Cold Chain Monitoring (British Columbia)
+      </button>
+    </div>
+
+    {/* Case Study Description */}
+    <p className="text-gray-700 text-lg leading-relaxed mb-20">
+      A large-scale agribusiness in Iowa implemented LoRaWANTech’s LoRaWAN end devices to monitor soil 
+      moisture and crop health over 1,200 acres. The system, powered by solar-assisted nodes and 
+      GAO Tek Inc. sensors, resulted in a 30% water savings and significantly improved crop 
+      yield forecasting.
+    </p>
+
+    {/* Bottom CTA Card */}
+    <div 
+      className="relative rounded-[2.5rem] overflow-hidden bg-cover bg-center min-h-[380px] flex items-center"
+      style={{ backgroundImage: "url('/images/lorawan-cta.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 p-8 md:p-16 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          Ready to modernize your utility <br /> infrastructure with secure, scalable smart metering?
+        </h2>
+        
+        <p className="text-lg text-gray-200 mb-10 max-w-2xl">
+          Contact LoRaWANTech to speak with our technical specialists, request quotes, 
+          or explore customized deployment solutions.
+        </p>
+
+        {/* Contact Us Button - White Style */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-white text-gray-900 px-7 py-3 rounded-md font-bold text-base hover:bg-gray-100 transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-gray-900 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };

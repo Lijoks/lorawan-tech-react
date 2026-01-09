@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const JoinApplicationServers = () => {
@@ -56,33 +57,66 @@ const JoinApplicationServers = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">LoRaWAN Join & Application Servers</h1>
-            <p className="text-xl max-w-3xl mx-auto mb-8">
-              Secure, streamline, and scale with secure key management and application-level routing
-            </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-lg">
-                Join Servers and Application Servers are critical to LoRaWAN infrastructure, enabling secure 
-                device activation and seamless data handling between edge devices and cloud applications. 
-                Designed for scalability and reliability, they ensure proper device authentication and efficient data delivery.
-              </p>
-            </div>
+      {/* Hero & Description Section */}
+<div className="w-full">
+  {/* 1. Hero Section (Image Background) */}
+  <section 
+    className="relative min-h-[550px] flex items-center bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/LoRaWAN-Join-Servers-Application-Servers.webp')" }}
+  >
+    {/* Dark Overlay to match the technical aesthetic of joinApplication.jpg */}
+    <div className="absolute inset-0 bg-slate-900/75"></div>
+
+    <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+      <div className="max-w-3xl">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          Secure, Streamline, and<br /> Scale with LoRaWAN Join<br /> & App Servers
+        </h1>
+        <p className="text-lg md:text-xl text-gray-200 mb-8 font-medium leading-relaxed">
+          LoRaWANTech's Join and Application Servers deliver secure key management 
+          and application-level routing for efficient, scalable LoRaWAN systems.
+        </p>
+        
+        {/* Contact Us Button - Dark Navy Style with Circular Arrow */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-[#0f172a] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-black transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-white/50 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
           </div>
-        </div>
-      </section>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* 2. Description Section (White Background) */}
+  <section className="bg-white py-16 md:py-24">
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-5xl text-gray-800 text-lg leading-relaxed">
+        <p>
+          
+
+Join Servers and Application Servers are critical to LoRaWAN infrastructure, enabling secure device activation and seamless data handling between edge devices and cloud applications. Join Servers manage device authentication, Over-the-Air Activation (OTAA), and secure key exchange, while Application Servers route decoded sensor data to user interfaces and business systems.
+
+These components form the backbone of secure and efficient LoRaWAN deployments across smart infrastructure, industrial IoT, and public sector applications. Designed for scalability and reliability, they ensure that devices are authenticated properly and data is delivered where it needs to go, with encryption, logging, and system resilience built-in.
+
+LoRaWANTech provides tailored Join and Application Server solutions across North America. Headquartered in Detroit, Michigan, we deliver robust systems built with strict quality assurance, ongoing innovation, and responsive B2B support. Our team helps you create secure, scalable infrastructure that unlocks the full potential of LoRaWAN connectivity.
+
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
 
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Server Components</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Components of LoRaWAN Join & Application Servers</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              These components form the backbone of secure and efficient LoRaWAN deployments across smart infrastructure, 
-              industrial IoT, and public sector applications.
+              In addition to offering products and systems developed by our team and trusted partners for LoRaWAN Join Servers & Application Servers, we are proud to carry top-tier technologies from Global Advanced Operations Tek Inc. (GAO Tek Inc.) and Global Advanced Operations RFID Inc. (GAO RFID Inc.). These reliable, high-quality products and systems enhance our ability to deliver comprehensive technologies, integrations, and services you can trust. Where relevant, we have provided direct links to select products and systems from GAO Tek Inc. and GAO RFID Inc.
             </p>
           </div>
 
@@ -211,6 +245,67 @@ const JoinApplicationServers = () => {
           </div>
         </div>
       </section>
+      {/* Case Studies & CTA Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    {/* Case Studies Header */}
+    <h2 className="text-3xl font-bold text-[#1a639b] mb-10">Case Studies</h2>
+
+    {/* Case Study Tabs */}
+    <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 1 – USA: Smart Agriculture Deployment (Iowa)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 2 – USA: Utility Monitoring System (Colorado)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 3 – Canada: Cold Chain Monitoring (British Columbia)
+      </button>
+    </div>
+
+    {/* Case Study Description */}
+    <p className="text-gray-700 text-lg leading-relaxed mb-20">
+      A large-scale agribusiness in Iowa implemented LoRaWANTech’s LoRaWAN end devices to monitor soil 
+      moisture and crop health over 1,200 acres. The system, powered by solar-assisted nodes and 
+      GAO Tek Inc. sensors, resulted in a 30% water savings and significantly improved crop 
+      yield forecasting.
+    </p>
+
+    {/* Bottom CTA Card */}
+    <div 
+      className="relative rounded-[2.5rem] overflow-hidden bg-cover bg-center min-h-[380px] flex items-center"
+      style={{ backgroundImage: "url('/images/lorawan-cta.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 p-8 md:p-16 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          Ready to deploy secure, high-performance<br />  Join and Application Server infrastructure?
+        </h2>
+        
+        <p className="text-lg text-gray-200 mb-10 max-w-2xl">
+          Contact LoRaWANTech to speak with our technical specialists, request quotes, 
+          or explore customized deployment solutions.
+        </p>
+
+        {/* Contact Us Button - White Style */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-white text-gray-900 px-7 py-3 rounded-md font-bold text-base hover:bg-gray-100 transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-gray-900 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };

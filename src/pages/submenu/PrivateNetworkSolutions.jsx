@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const PrivateNetworkSolutions = () => {
@@ -43,21 +44,53 @@ const PrivateNetworkSolutions = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Private LoRaWAN Network Solutions</h1>
-            <p className="text-xl max-w-3xl mx-auto mb-8">
-              Deploy secure, scalable, and reliable LoRaWAN infrastructures for enterprise-grade smart connectivity
+      {/* 1. Hero Section with Background Image */}
+      <section 
+        className="relative min-h-[550px] flex items-center bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/Private-LoRaWAN-Network-Solutions.webp')" }}
+      >
+        {/* Dark Overlay for text legibility */}
+        <div className="absolute inset-0 bg-slate-900/60"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full">
+          <div className="max-w-3xl text-left">
+            {/* Heading matched to screenshot */}
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              Private LoRaWAN<br /> Networks for Industrial-<br />Grade Smart Connectivity
+            </h1>
+            
+            {/* Sub-text matched to screenshot */}
+            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed">
+              Deploy secure, scalable, and reliable LoRaWAN infrastructures with LoRaWANTech’s 
+              end-to-end private networking solutions for enterprises.
             </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-lg">
-                Private LoRaWAN solutions provide enterprises with the flexibility to deploy and manage their own 
-                dedicated wireless communication networks. Ideal for smart cities, industrial IoT, and campus-wide 
-                applications, these networks ensure low power consumption, extended range, and robust data security.
-              </p>
-            </div>
+            
+            {/* Contact Us Button with Icon */}
+            <a 
+              href="/contact" 
+              className="inline-flex items-center bg-[#0B1C33] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-black transition-all group"
+            >
+              Contact Us
+              <div className="ml-3 border border-white/40 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+                <ArrowRight className="w-4 h-4" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Descriptive Section (Following the clean layout from reference images) */}
+      <section className="bg-white py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-5xl text-gray-700 text-lg leading-relaxed">
+            <p>
+              
+
+Private LoRaWAN (Long Range Wide Area Network) solutions provide enterprises with the flexibility to deploy and manage their own dedicated wireless communication networks. Ideal for smart cities, industrial IoT, and campus-wide applications, these networks ensure low power consumption, extended range, and robust data security. Designed to support thousands of devices and sensors, private LoRaWAN networks offer cost-effective deployment without dependency on public infrastructure.
+
+LoRaWANTech delivers comprehensive Private LoRaWAN Network Solutions tailored to meet the demands of North American B2B operations. With our expertise in connectivity and digital infrastructure, businesses gain the tools to streamline operations, gather real-time data, and improve system-wide efficiency. Through strategic partnerships, including GAO Tek Inc. and GAO RFID Inc., we ensure access to dependable and cutting-edge technologies.
+
+            </p>
           </div>
         </div>
       </section>
@@ -66,10 +99,9 @@ const PrivateNetworkSolutions = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">End-to-End Private Network Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Components of Private LoRaWAN Network Solutions</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              Designed to support thousands of devices and sensors, private LoRaWAN networks offer cost-effective 
-              deployment without dependency on public infrastructure.
+              In addition to offering products and systems developed by our team and trusted partners for Private LoRaWAN Network Solutions, we are proud to carry top-tier technologies from Global Advanced Operations Tek Inc. (GAO Tek Inc.) and Global Advanced Operations RFID Inc. (GAO RFID Inc.). These reliable, high-quality products and systems enhance our ability to deliver comprehensive technologies, integrations, and services you can trust. Where relevant, we have provided direct links to select products and systems from GAO Tek Inc. and GAO RFID Inc.
             </p>
           </div>
 
@@ -222,6 +254,67 @@ const PrivateNetworkSolutions = () => {
           </div>
         </div>
       </section>
+      {/* Case Studies & CTA Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    {/* Case Studies Header */}
+    <h2 className="text-3xl font-bold text-[#1a639b] mb-10">Case Studies</h2>
+
+    {/* Case Study Tabs */}
+    <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 1 – USA: Smart Agriculture Deployment (Iowa)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 2 – USA: Utility Monitoring System (Colorado)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 3 – Canada: Cold Chain Monitoring (British Columbia)
+      </button>
+    </div>
+
+    {/* Case Study Description */}
+    <p className="text-gray-700 text-lg leading-relaxed mb-20">
+      A large-scale agribusiness in Iowa implemented LoRaWANTech’s LoRaWAN end devices to monitor soil 
+      moisture and crop health over 1,200 acres. The system, powered by solar-assisted nodes and 
+      GAO Tek Inc. sensors, resulted in a 30% water savings and significantly improved crop 
+      yield forecasting.
+    </p>
+
+    {/* Bottom CTA Card */}
+    <div 
+      className="relative rounded-[2.5rem] overflow-hidden bg-cover bg-center min-h-[380px] flex items-center"
+      style={{ backgroundImage: "url('/images/lorawan-cta.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 p-8 md:p-16 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          Ready to build your private LoRaWAN<br />  infrastructure or need more information?
+        </h2>
+        
+        <p className="text-lg text-gray-200 mb-10 max-w-2xl">
+          Contact LoRaWANTech to speak with our technical specialists, request quotes, 
+          or explore customized deployment solutions.
+        </p>
+
+        {/* Contact Us Button - White Style */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-white text-gray-900 px-7 py-3 rounded-md font-bold text-base hover:bg-gray-100 transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-gray-900 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };

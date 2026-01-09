@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
 const SmartAgriculture = () => {
@@ -37,33 +38,70 @@ const SmartAgriculture = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-700 to-purple-700 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Smart Agriculture Solutions</h1>
-            <p className="text-xl max-w-3xl mx-auto mb-8">
-              Smarter, connected farming with advanced technologies for modern agribusiness
-            </p>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-lg">
-                Technology is reshaping how agricultural operations are managed—from remote monitoring of crops 
-                and soil to automated irrigation and asset tracking. Smart Agriculture leverages IoT networks 
-                to deliver data-driven insights that help farmers make more informed decisions.
-              </p>
-            </div>
+
+{/* Hero & Description Container */}
+<div className="w-full">
+  
+  {/* 1. Hero Section (Image Background) */}
+  <section 
+    className="relative min-h-[550px] flex items-center bg-cover bg-center"
+    style={{ backgroundImage: "url('/images/Smart-Agriculture.webp')" }}
+  >
+    {/* Dark Overlay to ensure text readability against the detailed background */}
+    <div className="absolute inset-0 bg-slate-900/70"></div>
+
+    <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pt-10">
+      <div className="max-w-3xl">
+        {/* Heading matched to screenshot text and left alignment */}
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          Smarter, Connected<br /> Farming with Advanced<br /> Smart Agriculture<br /> Systems
+        </h1>
+        
+        {/* Sub-text hook matched to screenshot */}
+        <p className="text-lg md:text-xl text-gray-200 mb-8 font-medium leading-relaxed pr-10">
+          Optimize yields, reduce waste, and improve sustainability with 
+          LoRaWANTech's Smart Agriculture technologies for modern agribusiness.
+        </p>
+        
+        {/* Contact Us Button - Dark Navy Style with Circular Arrow */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-[#0f172a] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-black transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-white/50 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
           </div>
-        </div>
-      </section>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* 2. Description Section (White Background - perfectly aligned below) */}
+  <section className="bg-white py-16 md:py-24">
+    <div className="max-w-7xl mx-auto px-4">
+      {/* Container constrained and centered for perfect alignment */}
+      <div className="max-w-4xl mx-auto text-gray-800 text-lg leading-relaxed">
+        <p>
+          
+
+Technology is reshaping how agricultural operations are managed—from remote monitoring of crops and soil to automated irrigation and asset tracking. Smart Agriculture leverages a network of IoT devices, sensors, and cloud platforms to deliver data-driven insights that help farmers and agribusinesses make more informed decisions. These innovations support sustainable practices, improve yields, and reduce labor and resource costs.
+
+LoRaWANTech is proud to be a trusted technology partner for Smart Agriculture solutions across North America. Based in Detroit, Michigan, we serve B2B clients with scalable, field-tested systems that bring real-time intelligence to agricultural landscapes. By integrating advanced hardware, robust connectivity, and powerful analytics, we help our clients maximize productivity, ensure operational resilience, and achieve long-term sustainability goals. Our approach combines deep technical expertise with hands-on customer support to deliver systems tailored to your unique environment.
+
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
 
       {/* Main Content */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Comprehensive Agricultural Solutions</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Core Components of Smart Agriculture Systems</h2>
             <p className="text-lg text-gray-700 max-w-4xl mx-auto">
-              By integrating advanced hardware, robust connectivity, and powerful analytics, we help clients 
-              maximize productivity, ensure operational resilience, and achieve long-term sustainability goals.
+              In collaboration with top-tier partners like Global Advanced Operations Tek Inc. (GAO Tek Inc.) and Global Advanced Operations RFID Inc. (GAO RFID Inc.), LoRaWANTech delivers reliable, integrated Smart Agriculture technologies built for the unique challenges of farming environments.
             </p>
           </div>
 
@@ -232,6 +270,67 @@ const SmartAgriculture = () => {
           </div>
         </div>
       </section>
+      {/* Case Studies & CTA Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    
+    {/* Case Studies Header */}
+    <h2 className="text-3xl font-bold text-[#1a639b] mb-10">Case Studies</h2>
+
+    {/* Case Study Tabs */}
+    <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 1 – USA: Smart Agriculture Deployment (Iowa)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 2 – USA: Utility Monitoring System (Colorado)
+      </button>
+      <button className="bg-[#1a639b] text-white px-6 py-2.5 rounded-sm text-sm font-medium">
+        Case Study 3 – Canada: Cold Chain Monitoring (British Columbia)
+      </button>
+    </div>
+
+    {/* Case Study Description */}
+    <p className="text-gray-700 text-lg leading-relaxed mb-20">
+      A large-scale agribusiness in Iowa implemented LoRaWANTech’s LoRaWAN end devices to monitor soil 
+      moisture and crop health over 1,200 acres. The system, powered by solar-assisted nodes and 
+      GAO Tek Inc. sensors, resulted in a 30% water savings and significantly improved crop 
+      yield forecasting.
+    </p>
+
+    {/* Bottom CTA Card */}
+    <div 
+      className="relative rounded-[2.5rem] overflow-hidden bg-cover bg-center min-h-[380px] flex items-center"
+      style={{ backgroundImage: "url('/images/lorawan-cta.webp')" }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="relative z-10 p-8 md:p-16 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+          Ready to transform your farming<br />  operations with scalable, data-driven technology?
+        </h2>
+        
+        <p className="text-lg text-gray-200 mb-10 max-w-2xl">
+          Contact LoRaWANTech to speak with our technical specialists, request quotes, 
+          or explore customized deployment solutions.
+        </p>
+
+        {/* Contact Us Button - White Style */}
+        <a 
+          href="/contact" 
+          className="inline-flex items-center bg-white text-gray-900 px-7 py-3 rounded-md font-bold text-base hover:bg-gray-100 transition-all group"
+        >
+          Contact Us
+          <div className="ml-3 border border-gray-900 rounded-full p-0.5 group-hover:translate-x-1 transition-transform">
+            <ArrowRight className="w-4 h-4" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
     </>
   );
 };
